@@ -1,0 +1,19 @@
+version: '3.0'
+
+services:
+
+  nginx:
+    container_name: editor-service
+    image: nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./y-editor:/usr/share/nginx/html
+      
+  export-service:
+    container_name: image-export
+    build:
+      ./image-store
+    ports:
+      - 8899:8899
+  

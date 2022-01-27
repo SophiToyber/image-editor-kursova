@@ -1,0 +1,130 @@
+body{
+  background-color: rgb(239,	244,	246);
+  margin: 0;
+  font-family: 'Roboto';
+}
+
+button{
+  cursor: pointer;
+}
+
+.functionality{
+  height: 3rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.operations-wrapper{
+  display: flex;
+  margin-left: -10px;
+}
+
+.operations-wrapper span{
+  margin: 0 10px;
+  padding-top: 4px;
+  font-size: 1.2rem;
+}
+
+.operation-btn{
+  color:  rgb(38,	45,	69);
+  border: none;
+  margin: 0 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.image-wrapper{
+  height: calc(100vh - 3rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.download-btn{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #ffffff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);;
+}
+
+.file-upload-section{
+  color: rgb(38,	45,	69);
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 10px;
+
+  border: 2px solid rgb(38,	45,	69);
+}
+
+.file-upload-section:hover{
+  background-color: #ffffff;
+}
+
+#foto-file {
+  display: none;
+}
+
+.telegram-export{
+  font-family: 'Roboto';
+  font-size: .9rem;
+  display: flex;
+  align-items: center;
+}
+
+.telegram-export input{
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid rgb(38,	45,	69);
+  margin: 0 5px;
+}
+
+.telegram-export input:first-child{
+  margin-left: 10px;
+}
+
+.sidebar{
+  height: calc(100vh - 3rem);
+  position: fixed;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  background-color: #ffffff;
+text-align: center;
+z-index: 1000;
+
+}
+
+.sidebar span{
+  margin: 10px 0 ;
+  font-size: 1.2rem;
+
+}
+
+.sidebar .operation-btn{
+  margin: 10px 0;
+}
+
+.image{
+  max-height: calc(100vh - 100px);
+  width: auto;
+}
+
+#color-picker, #colorize-color-picker {
+  display: none;
+}
+#color-preview{
+  float: left;
+  width: 15px;
+  height: 15px;
+}
